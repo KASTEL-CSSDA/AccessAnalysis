@@ -1,0 +1,382 @@
+[
+  "access.analysis.io.FlattenedAnalysisResult",
+  {
+    "securityThreats": [
+      "java.util.ImmutableCollections$ListN",
+      [
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "passer-by-adversary",
+            "accessedDataSetName": "consumptiondata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getEnergyValue (id:_CLB80JqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:70d6178f-e393-4d5a-8c4a-9db0809d6d4d, ReturnValueInformation) because Information of Signature",
+                "at consumptiondata (id:_v6fF05znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "passer-by-adversary",
+            "accessedDataSetName": "consumptiondata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getEnergyValue (id:_CLB80JqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:8ca6c8da-5dc1-43a2-8405-034fca172dc5, SizeOfInformation) because Information of Signature",
+                "at consumptiondata (id:_v6fF05znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "passer-by-adversary",
+            "accessedDataSetName": "consumptiondata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getEnergyValue (id:_CLB80JqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Call information (id:a9a480b0-885d-46e6-9af4-226907893520, CallInformation) because Information of Signature",
+                "at consumptiondata (id:_v6fF05znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "passer-by-adversary",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Call information (id:1e732ced-b4b1-45bc-939a-0b51236fbab0, CallInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "passer-by-adversary",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:7b8cf8aa-953e-4ad6-a653-7a9934890574, ReturnValueInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "passer-by-adversary",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:8711bd56-5a7f-4dac-a50c-9cabbad5037b, SizeOfInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Energy Visualization (id:_GAeeUCpXEeKNWc2UWjbmuw, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (no protections)",
+                "at Energy Visualization (id:_9c3KwCHcEd6lJo4DCALHMw, AssemblyContext) because assembly located in container",
+                "at Energy Visualization (id:_os1t4CHbEd62GabW1zGSBw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because is a required interface at the container",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Call information (id:1e732ced-b4b1-45bc-939a-0b51236fbab0, CallInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Energy Visualization (id:_GAeeUCpXEeKNWc2UWjbmuw, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (no protections)",
+                "at Energy Visualization (id:_9c3KwCHcEd6lJo4DCALHMw, AssemblyContext) because assembly located in container",
+                "at Energy Visualization (id:_os1t4CHbEd62GabW1zGSBw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because is a required interface at the container",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:7b8cf8aa-953e-4ad6-a653-7a9934890574, ReturnValueInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Energy Visualization (id:_GAeeUCpXEeKNWc2UWjbmuw, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (no protections)",
+                "at Energy Visualization (id:_9c3KwCHcEd6lJo4DCALHMw, AssemblyContext) because assembly located in container",
+                "at Energy Visualization (id:_os1t4CHbEd62GabW1zGSBw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because is a required interface at the container",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:8711bd56-5a7f-4dac-a50c-9cabbad5037b, SizeOfInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Energy Visualization (id:_GAeeUCpXEeKNWc2UWjbmuw, EnrichedResourceContainer) because sharing type is \"Shared\" and  connection type is \"Possible\"",
+                "at Energy Visualization (id:_9c3KwCHcEd6lJo4DCALHMw, AssemblyContext) because assembly located in container",
+                "at Energy Visualization (id:_os1t4CHbEd62GabW1zGSBw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because is a required interface at the container",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Call information (id:1e732ced-b4b1-45bc-939a-0b51236fbab0, CallInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Energy Visualization (id:_GAeeUCpXEeKNWc2UWjbmuw, EnrichedResourceContainer) because sharing type is \"Shared\" and  connection type is \"Possible\"",
+                "at Energy Visualization (id:_9c3KwCHcEd6lJo4DCALHMw, AssemblyContext) because assembly located in container",
+                "at Energy Visualization (id:_os1t4CHbEd62GabW1zGSBw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because is a required interface at the container",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:7b8cf8aa-953e-4ad6-a653-7a9934890574, ReturnValueInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Energy Visualization (id:_GAeeUCpXEeKNWc2UWjbmuw, EnrichedResourceContainer) because sharing type is \"Shared\" and  connection type is \"Possible\"",
+                "at Energy Visualization (id:_9c3KwCHcEd6lJo4DCALHMw, AssemblyContext) because assembly located in container",
+                "at Energy Visualization (id:_os1t4CHbEd62GabW1zGSBw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because is a required interface at the container",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:8711bd56-5a7f-4dac-a50c-9cabbad5037b, SizeOfInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Call information (id:1e732ced-b4b1-45bc-939a-0b51236fbab0, CallInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:7b8cf8aa-953e-4ad6-a653-7a9934890574, ReturnValueInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at livingroom (id:_FLpg4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:8711bd56-5a7f-4dac-a50c-9cabbad5037b, SizeOfInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Call information (id:1e732ced-b4b1-45bc-939a-0b51236fbab0, CallInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:7b8cf8aa-953e-4ad6-a653-7a9934890574, ReturnValueInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "guest",
+            "accessedDataSetName": "billingdata",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at outdoors (id:_GaFC4ZzpEeWvbrCzHVJijg, Location) because can access loaction",
+                "at Wireless (id:_x61RIJzgEeWPbeRUuP85Tg, LinkingResource) because link is accessable at location",
+                "at Energy Meter (id:_nZhOgJzgEeWPbeRUuP85Tg, EnrichedResourceContainer) because container connected to link",
+                "at Energy Meter Assembly Context (id:_I6t0oJzeEeWPbeRUuP85Tg, AssemblyContext) because assembly located in container",
+                "at Energy Meter (id:_UhWpUJqpEeWvQ_r7FgUerw, Component) because component realizes assembly",
+                "at EnergyMeasurement (id:_AHn6oJqqEeWvQ_r7FgUerw, Interface) because interface is provided by component and communicates over link unencrypted",
+                "at getCustomerId (id:_JCEtIJqqEeWvQ_r7FgUerw, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:8711bd56-5a7f-4dac-a50c-9cabbad5037b, SizeOfInformation) because Information of Signature",
+                "at billingdata (id:_zUcrQ5znEeWvbrCzHVJijg, DataSet) because info belongs to dataset"
+              ]
+            ]
+          }
+        ]
+      ]
+    ]
+  }
+]

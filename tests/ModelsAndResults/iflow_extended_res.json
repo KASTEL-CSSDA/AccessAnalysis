@@ -1,0 +1,370 @@
+[
+  "access.analysis.io.FlattenedAnalysisResult",
+  {
+    "securityThreats": [
+      "java.util.ImmutableCollections$ListN",
+      [
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a required interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at sizeOf(requestData) (id:79695a4d-1df9-4329-9463-9e157afc1a18, SizeOfInformation) because Information of Signature",
+                "at UserDetails, Selection (id:cc8c7086-ffbf-4b41-9b89-07ba44daaade, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a required interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at Call information (id:65d5a248-3ced-49f9-8c27-471a5483ceed, CallInformation) because Information of Signature",
+                "at UserDetails, Selection (id:dc64270a-871f-4889-83a5-df6a196660a4, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:d4da948b-2e69-4ad3-a80b-876d38642ef2, ReturnValueInformation) because Information of Signature",
+                "at UserDetails, Selection (id:adaf4b90-a46d-4229-b5b2-f0de68c5bea2, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at sizeOf(requestData) (id:79695a4d-1df9-4329-9463-9e157afc1a18, SizeOfInformation) because Information of Signature",
+                "at UserDetails, Selection (id:dc7b1786-6be8-4fc4-9f23-25b2fcf3ea03, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at Call information (id:65d5a248-3ced-49f9-8c27-471a5483ceed, CallInformation) because Information of Signature",
+                "at UserDetails, Selection (id:da8f035d-c255-4031-9bf7-a4b283ee3182, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a required interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:7a76626e-2f96-4ecb-b48e-c52a23179b7b, SizeOfInformation) because Information of Signature",
+                "at UserDetails, Selection (id:661e8c6e-8277-4f5a-a9ff-cb117e441162, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a required interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:d4da948b-2e69-4ad3-a80b-876d38642ef2, ReturnValueInformation) because Information of Signature",
+                "at UserDetails, Selection (id:beac0695-3fee-4a80-8af3-96d8580dc312, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "TravelAgency",
+            "accessedDataSetName": "UserDetails, Selection",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at TravelAgency (id:__RugEc6AEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AgencyServer (id:_HM_VsMN5EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (TravelAgencyLock)",
+                "at TravelAgency <TravelAgency> (id:_0WeT8MN-EeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at TravelAgency (id:_SaUYgMNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:7a76626e-2f96-4ecb-b48e-c52a23179b7b, SizeOfInformation) because Information of Signature",
+                "at UserDetails, Selection (id:13fdaf90-c4c4-470c-844e-ffab94230e84, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "AirlineTechnicalService",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at SupportCenter (id:_NX09KgylEey1YdsQNY8KdA, Location) because can access loaction",
+                "at SupportCenter (id:_jIQAQBRrEey_turSZ8PcJQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (SupportCenterLock)",
+                "at Assembly_AirlineLogger <AirlineLogger> (id:_5gt3EBRrEey_turSZ8PcJQ, AssemblyContext) because assembly located in container",
+                "at AirlineLogger (id:_MKBSwAyQEey1YdsQNY8KdA, Component) because component realizes assembly",
+                "at AirlineLogging (id:_NhhRMAyQEey1YdsQNY8KdA, Interface) because is a provided interface at the container",
+                "at log (id:_gwavAAyQEey1YdsQNY8KdA, OperationSignature) because operation is contained in interface",
+                "at sizeOf(entry) (id:f8e6624e-ff5c-4539-b491-eff3566b33fc, SizeOfInformation) because Information of Signature",
+                "at UserDetails (id:7e383d9f-777c-4e38-920b-4c65ccccc122, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "AirlineTechnicalService",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at SupportCenter (id:_NX09KgylEey1YdsQNY8KdA, Location) because can access loaction",
+                "at SupportCenter (id:_jIQAQBRrEey_turSZ8PcJQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (SupportCenterLock)",
+                "at Assembly_AirlineLogger <AirlineLogger> (id:_5gt3EBRrEey_turSZ8PcJQ, AssemblyContext) because assembly located in container",
+                "at AirlineLogger (id:_MKBSwAyQEey1YdsQNY8KdA, Component) because component realizes assembly",
+                "at AirlineLogging (id:_NhhRMAyQEey1YdsQNY8KdA, Interface) because is a provided interface at the container",
+                "at log (id:_gwavAAyQEey1YdsQNY8KdA, OperationSignature) because operation is contained in interface",
+                "at entry (id:99db838e-45f5-4c47-8f7d-8d1605474b19, ParameterInformation) because Information of Signature",
+                "at UserDetails (id:38fc9418-8b34-4921-b9e4-6b766b9a886d, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "AirlineTechnicalService",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at SupportCenter (id:_NX09KgylEey1YdsQNY8KdA, Location) because can access loaction",
+                "at SupportCenter (id:_jIQAQBRrEey_turSZ8PcJQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (SupportCenterLock)",
+                "at Assembly_AirlineLogger <AirlineLogger> (id:_5gt3EBRrEey_turSZ8PcJQ, AssemblyContext) because assembly located in container",
+                "at AirlineLogger (id:_MKBSwAyQEey1YdsQNY8KdA, Component) because component realizes assembly",
+                "at AirlineLogging (id:_NhhRMAyQEey1YdsQNY8KdA, Interface) because is a provided interface at the container",
+                "at log (id:_gwavAAyQEey1YdsQNY8KdA, OperationSignature) because operation is contained in interface",
+                "at Call information (id:81cdc798-a24e-4117-ab74-7dbef3c68b40, CallInformation) because Information of Signature",
+                "at UserDetails (id:4264e0af-aab2-4b7f-9cc7-c8a422fd032c, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "Airline",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at Airline (id:_CB0pIc6BEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AirlineServer (id:_fuWBEMN4EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (AirlineLock)",
+                "at Airline <Airline> (id:_HRAO0MOAEeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at Airline (id:_j3xt4MNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at sizeOf(\\return) (id:7a76626e-2f96-4ecb-b48e-c52a23179b7b, SizeOfInformation) because Information of Signature",
+                "at UserDetails (id:585dfbcc-703a-4c7a-bab3-15f4b7696486, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "Airline",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at Airline (id:_CB0pIc6BEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AirlineServer (id:_fuWBEMN4EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (AirlineLock)",
+                "at Airline <Airline> (id:_HRAO0MOAEeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at Airline (id:_j3xt4MNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at AirlineLogging (id:_NhhRMAyQEey1YdsQNY8KdA, Interface) because is a required interface at the container",
+                "at log (id:_gwavAAyQEey1YdsQNY8KdA, OperationSignature) because operation is contained in interface",
+                "at sizeOf(entry) (id:f8e6624e-ff5c-4539-b491-eff3566b33fc, SizeOfInformation) because Information of Signature",
+                "at UserDetails (id:66b1651c-27de-4a86-847d-36d4637bb847, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "Airline",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at Airline (id:_CB0pIc6BEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AirlineServer (id:_fuWBEMN4EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (AirlineLock)",
+                "at Airline <Airline> (id:_HRAO0MOAEeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at Airline (id:_j3xt4MNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at sizeOf(requestData) (id:79695a4d-1df9-4329-9463-9e157afc1a18, SizeOfInformation) because Information of Signature",
+                "at UserDetails (id:25bb8d44-d71b-4843-a767-eb6ada4ef29c, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "Airline",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at Airline (id:_CB0pIc6BEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AirlineServer (id:_fuWBEMN4EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (AirlineLock)",
+                "at Airline <Airline> (id:_HRAO0MOAEeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at Airline (id:_j3xt4MNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at AirlineLogging (id:_NhhRMAyQEey1YdsQNY8KdA, Interface) because is a required interface at the container",
+                "at log (id:_gwavAAyQEey1YdsQNY8KdA, OperationSignature) because operation is contained in interface",
+                "at Call information (id:81cdc798-a24e-4117-ab74-7dbef3c68b40, CallInformation) because Information of Signature",
+                "at UserDetails (id:968af6c8-3715-4174-a3a8-cb73ae8a7e9b, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "Airline",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at Airline (id:_CB0pIc6BEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AirlineServer (id:_fuWBEMN4EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (AirlineLock)",
+                "at Airline <Airline> (id:_HRAO0MOAEeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at Airline (id:_j3xt4MNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at AirlineLogging (id:_NhhRMAyQEey1YdsQNY8KdA, Interface) because is a required interface at the container",
+                "at log (id:_gwavAAyQEey1YdsQNY8KdA, OperationSignature) because operation is contained in interface",
+                "at entry (id:99db838e-45f5-4c47-8f7d-8d1605474b19, ParameterInformation) because Information of Signature",
+                "at UserDetails (id:ea26bad7-670d-4de2-a3ad-3ef42456b264, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "Airline",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at Airline (id:_CB0pIc6BEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AirlineServer (id:_fuWBEMN4EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (AirlineLock)",
+                "at Airline <Airline> (id:_HRAO0MOAEeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at Airline (id:_j3xt4MNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at Call information (id:65d5a248-3ced-49f9-8c27-471a5483ceed, CallInformation) because Information of Signature",
+                "at UserDetails (id:96206c14-03c4-4fe5-b477-408a72499102, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ],
+        [
+          "access.analysis.io.FlattenedSecurityThreat",
+          {
+            "adversaryName": "Airline",
+            "accessedDataSetName": "UserDetails",
+            "trace": [
+              "java.util.ImmutableCollections$ListN",
+              [
+                "at Airline (id:_CB0pIc6BEeWqSdNpnh9tmQ, Location) because can access loaction",
+                "at AirlineServer (id:_fuWBEMN4EeWPE-QAhbUzuQ, EnrichedResourceContainer) because the adversary has bypassed the tamperprotections (AirlineLock)",
+                "at Airline <Airline> (id:_HRAO0MOAEeWst9mTsticNA, AssemblyContext) because assembly located in container",
+                "at Airline (id:_j3xt4MNzEeWPE-QAhbUzuQ, Component) because component realizes assembly",
+                "at FlightOffers (id:_OWfzMMNyEeWPE-QAhbUzuQ, Interface) because is a provided interface at the container",
+                "at getFlightOffers (id:_R6uH4MNyEeWPE-QAhbUzuQ, OperationSignature) because operation is contained in interface",
+                "at Return value information (id:d4da948b-2e69-4ad3-a80b-876d38642ef2, ReturnValueInformation) because Information of Signature",
+                "at UserDetails (id:b6623c02-8ece-4ad2-874a-89b85683da20, DataSet) because this (these) dataSets contain this information"
+              ]
+            ]
+          }
+        ]
+      ]
+    ]
+  }
+]

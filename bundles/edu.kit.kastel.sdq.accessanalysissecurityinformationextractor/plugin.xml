@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="pcm2java4joana.commands.transform"
+            name="To JSON for access analysis">
+      </command>
+      <command
+            id="pcm2java4joana.commands.backproject"
+            name="Backproject JOANA Results">
+      </command>
+   </extension>
+  	
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="edu.kit.kastel.sdq.accessanalysissecurityinformationextractor.model.Handler"
+            commandId="pcm2java4joana.commands.transform">
+      </handler>
+   </extension>
+ 
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any">
+            <command
+                  commandId="pcm2java4joana.commands.transform"
+                  id="pcm2java4joana.menus.transform"
+                  mnemonic="S">
+            </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any">
+            <command
+                  commandId="pcm2java4joana.commands.backproject"
+                  id="pcm2java4joana.menus.backproject"
+                  mnemonic="S">
+            </command>
+      </menuContribution>
+   </extension>
+
+</plugin>

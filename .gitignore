@@ -1,0 +1,4 @@
+/.metadata/
+/.vs/
+*/bin/*
+*.class

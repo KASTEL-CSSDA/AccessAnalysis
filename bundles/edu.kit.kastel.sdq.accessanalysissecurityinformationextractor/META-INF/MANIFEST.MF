@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Accessanalysissecurityinformationextractor
+Bundle-SymbolicName: edu.kit.kastel.sdq.accessanalysissecurityinformationextractor;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: edu.kit.kastel.sdq.accessanalysissecurityinformationextractor
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Require-Bundle: edu.kit.kastel.scbs.confidentialitymm;bundle-version="1.1.0",
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ org.modelversioning.emfprofile,
+ edu.kit.ipd.sdq.commons.util.mdsdprofiles,
+ org.eclipse.core.resources,
+ org.eclipse.ui.workbench,
+ org.eclipse.jface,
+ org.palladiosimulator.mdsdprofiles.api,
+ com.fasterxml.jackson.core.jackson-annotations;bundle-version="2.14.2",
+ com.fasterxml.jackson.core.jackson-core;bundle-version="2.14.2",
+ com.fasterxml.jackson.core.jackson-databind;bundle-version="2.14.2"
+Bundle-ClassPath: lib/securitymodel.jar,
+ .
+

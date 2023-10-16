@@ -1,0 +1,929 @@
+WORLD:
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- observableServices(adversary(29,guest),operationSignature(55,getCustomerId),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(14,livingroom),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(29,guest),location(14,livingroom),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(29,guest),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(29,guest))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToService(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- observableServices(adversary(29,guest),operationSignature(55,getCustomerId),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(29,guest),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(29,guest),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(29,guest))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToService(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- observableServices(adversary(29,guest),operationSignature(55,getCustomerId),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- sharingOf(resourceContainer(67,Energy Visualization),shared)
+   |  |  |
+   |  |  `- furtherConnections(resourceContainer(67,Energy Visualization),possible)
+   |  |
+   |  `- requiredInterfacesOn(resourceContainer(67,Energy Visualization),operationInterface(37,EnergyMeasurement),assemblyContext(58,Energy Visualization))
+   |     |
+   |     `- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |
+   `- isInSecureWithRespectToService(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- observableServices(adversary(29,guest),operationSignature(55,getCustomerId),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(29,guest),location(14,livingroom),none)
+   |  |
+   |  `- requiredInterfacesOn(resourceContainer(67,Energy Visualization),operationInterface(37,EnergyMeasurement),assemblyContext(58,Energy Visualization))
+   |     |
+   |     `- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |
+   `- isInSecureWithRespectToService(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(29,guest),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(14,livingroom),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(29,guest),location(14,livingroom),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(29,guest),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(29,guest))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |  |
+   |  `- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),return(operationSignature(55,getCustomerId)),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(14,livingroom),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(29,guest),location(14,livingroom),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(29,guest),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(29,guest))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |  |
+   |  `- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(29,guest),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(29,guest),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(29,guest))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |  |
+   |  `- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),return(operationSignature(55,getCustomerId)),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(29,guest),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(29,guest),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(29,guest),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(29,guest))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |  |
+   |  `- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- sharingOf(resourceContainer(67,Energy Visualization),shared)
+   |  |  |
+   |  |  `- furtherConnections(resourceContainer(67,Energy Visualization),possible)
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(67,Energy Visualization),operationInterface(37,EnergyMeasurement),assemblyContext(58,Energy Visualization))
+   |  |  |
+   |  |  `- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- parametersOf(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |     |
+   |     `- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),return(operationSignature(55,getCustomerId)),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- sharingOf(resourceContainer(67,Energy Visualization),shared)
+   |  |  |
+   |  |  `- furtherConnections(resourceContainer(67,Energy Visualization),possible)
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(67,Energy Visualization),operationInterface(37,EnergyMeasurement),assemblyContext(58,Energy Visualization))
+   |  |  |
+   |  |  `- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- parametersOf(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |     |
+   |     `- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(29,guest),location(14,livingroom),none)
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(67,Energy Visualization),operationInterface(37,EnergyMeasurement),assemblyContext(58,Energy Visualization))
+   |  |  |
+   |  |  `- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- parametersOf(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |     |
+   |     `- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(29,guest)
+|
++- attacker(adversary(29,guest))
+|
+`- isInSecureWithRespectTo(adversary(29,guest),)
+   |
+   +- accessibleParameters(adversary(29,guest),return(operationSignature(55,getCustomerId)),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(29,guest),resourceContainer(67,Energy Visualization),location(14,livingroom))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(29,guest),location(14,livingroom))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(29,guest))
+   |  |  |
+   |  |  +- location(resourceContainer(67,Energy Visualization),location(14,livingroom),none)
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(29,guest),location(14,livingroom),none)
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(67,Energy Visualization),operationInterface(37,EnergyMeasurement),assemblyContext(58,Energy Visualization))
+   |  |  |
+   |  |  `- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- parametersOf(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |     |
+   |     `- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(29,guest),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+            |
+            `- not mayknow(adversary(29,guest),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(29,guest),list(dataSet(2,consumptiondata),dataSet(4,public)))
+
+adversary(30,passer-by-adversary)
+|
++- attacker(adversary(30,passer-by-adversary))
+|
+`- isInSecureWithRespectTo(adversary(30,passer-by-adversary),)
+   |
+   +- observableServices(adversary(30,passer-by-adversary),operationSignature(54,getEnergyValue),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),dataSet(2,consumptiondata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(30,passer-by-adversary),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(30,passer-by-adversary))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(30,passer-by-adversary),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(30,passer-by-adversary),dataSet(2,consumptiondata))
+   |  |     |
+   |  |     +- attacker(adversary(30,passer-by-adversary))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(2,consumptiondata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- includesCall(operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToService(adversary(30,passer-by-adversary),operationSignature(54,getEnergyValue),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(30,passer-by-adversary),operationSignature(54,getEnergyValue),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(30,passer-by-adversary),operationSignature(54,getEnergyValue),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includesCall(operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(30,passer-by-adversary),dataSet(2,consumptiondata))
+               |
+               `- mayKnowData(adversary(30,passer-by-adversary),list(dataSet(4,public)))
+
+adversary(30,passer-by-adversary)
+|
++- attacker(adversary(30,passer-by-adversary))
+|
+`- isInSecureWithRespectTo(adversary(30,passer-by-adversary),)
+   |
+   +- observableServices(adversary(30,passer-by-adversary),operationSignature(55,getCustomerId),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(30,passer-by-adversary),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(30,passer-by-adversary))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(30,passer-by-adversary),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(30,passer-by-adversary),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(30,passer-by-adversary))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  `- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToService(adversary(30,passer-by-adversary),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(30,passer-by-adversary),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(30,passer-by-adversary),operationSignature(55,getCustomerId),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includesCall(operationSignature(55,getCustomerId),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(30,passer-by-adversary),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(30,passer-by-adversary),list(dataSet(4,public)))
+
+adversary(30,passer-by-adversary)
+|
++- attacker(adversary(30,passer-by-adversary))
+|
+`- isInSecureWithRespectTo(adversary(30,passer-by-adversary),)
+   |
+   +- accessibleParameters(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(54,getEnergyValue))),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),dataSet(2,consumptiondata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(30,passer-by-adversary),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(30,passer-by-adversary))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(30,passer-by-adversary),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(30,passer-by-adversary),dataSet(2,consumptiondata))
+   |  |     |
+   |  |     +- attacker(adversary(30,passer-by-adversary))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(2,consumptiondata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(54,getEnergyValue),sizeOf(return(operationSignature(54,getEnergyValue))))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(54,getEnergyValue),sizeOf(return(operationSignature(54,getEnergyValue))))
+   |  |
+   |  `- includes(sizeOf(return(operationSignature(54,getEnergyValue))),dataSet(2,consumptiondata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(54,getEnergyValue),sizeOf(return(operationSignature(54,getEnergyValue))))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(54,getEnergyValue))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(54,getEnergyValue))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(54,getEnergyValue))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(sizeOf(return(operationSignature(54,getEnergyValue))),dataSet(2,consumptiondata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(54,getEnergyValue),sizeOf(return(operationSignature(54,getEnergyValue))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(30,passer-by-adversary),dataSet(2,consumptiondata))
+               |
+               `- mayKnowData(adversary(30,passer-by-adversary),list(dataSet(4,public)))
+
+adversary(30,passer-by-adversary)
+|
++- attacker(adversary(30,passer-by-adversary))
+|
+`- isInSecureWithRespectTo(adversary(30,passer-by-adversary),)
+   |
+   +- accessibleParameters(adversary(30,passer-by-adversary),return(operationSignature(54,getEnergyValue)),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),dataSet(2,consumptiondata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(30,passer-by-adversary),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(30,passer-by-adversary))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(30,passer-by-adversary),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(30,passer-by-adversary),dataSet(2,consumptiondata))
+   |  |     |
+   |  |     +- attacker(adversary(30,passer-by-adversary))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(2,consumptiondata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(54,getEnergyValue),return(operationSignature(54,getEnergyValue)))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(54,getEnergyValue),return(operationSignature(54,getEnergyValue)))
+   |  |
+   |  `- includes(return(operationSignature(54,getEnergyValue)),dataSet(2,consumptiondata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(54,getEnergyValue),return(operationSignature(54,getEnergyValue)))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),list(return),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(30,passer-by-adversary),return(operationSignature(54,getEnergyValue)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(30,passer-by-adversary),return(operationSignature(54,getEnergyValue)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(30,passer-by-adversary),return(operationSignature(54,getEnergyValue)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(return(operationSignature(54,getEnergyValue)),dataSet(2,consumptiondata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(54,getEnergyValue),return(operationSignature(54,getEnergyValue)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(54,getEnergyValue),dataSet(2,consumptiondata),list(return),)
+            |
+            `- not mayknow(adversary(30,passer-by-adversary),dataSet(2,consumptiondata))
+               |
+               `- mayKnowData(adversary(30,passer-by-adversary),list(dataSet(4,public)))
+
+adversary(30,passer-by-adversary)
+|
++- attacker(adversary(30,passer-by-adversary))
+|
+`- isInSecureWithRespectTo(adversary(30,passer-by-adversary),)
+   |
+   +- accessibleParameters(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(55,getCustomerId))),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(30,passer-by-adversary),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(30,passer-by-adversary))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(30,passer-by-adversary),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(30,passer-by-adversary),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(30,passer-by-adversary))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |  |
+   |  `- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(30,passer-by-adversary),sizeOf(return(operationSignature(55,getCustomerId))),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(sizeOf(return(operationSignature(55,getCustomerId))),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),sizeOf(return(operationSignature(55,getCustomerId))))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(call,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(30,passer-by-adversary),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(30,passer-by-adversary),list(dataSet(4,public)))
+
+adversary(30,passer-by-adversary)
+|
++- attacker(adversary(30,passer-by-adversary))
+|
+`- isInSecureWithRespectTo(adversary(30,passer-by-adversary),)
+   |
+   +- accessibleParameters(adversary(30,passer-by-adversary),return(operationSignature(55,getCustomerId)),assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement)),)
+   |  |
+   |  +- linksDataAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |  |
+   |  |  +- linkAccessibleBy(adversary(30,passer-by-adversary),linkingResource(66,Wireless),location(15,outdoors))
+   |  |  |  |
+   |  |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(30,passer-by-adversary),location(15,outdoors))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(30,passer-by-adversary))
+   |  |  |
+   |  |  +- linkLocation(linkingResource(66,Wireless),location(15,outdoors),none)
+   |  |  |
+   |  |  +- tamperingAbilities(adversary(30,passer-by-adversary),location(15,outdoors),none)
+   |  |  |
+   |  |  `- exposesPhysicallyAccessibleDataTo(linkingResource(66,Wireless),adversary(30,passer-by-adversary),dataSet(3,billingdata))
+   |  |     |
+   |  |     +- attacker(adversary(30,passer-by-adversary))
+   |  |     |
+   |  |     `- encryptsExcept(linkingResource(66,Wireless),dataSet(3,billingdata))
+   |  |
+   |  +- connects(linkingResource(66,Wireless),resourceContainer(67,Energy Visualization),resourceContainer(68,Energy Meter))
+   |  |
+   |  +- requires(basicComponent(32,Energy Visualization),operationInterface(37,EnergyMeasurement))
+   |  |
+   |  +- parametersOf(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |  |  |
+   |  |  `- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |  |
+   |  `- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+   |     |
+   |     +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+   |     |
+   |     `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+   |
+   `- isInSecureWithRespectToParameter(adversary(30,passer-by-adversary),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(30,passer-by-adversary),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(30,passer-by-adversary),return(operationSignature(55,getCustomerId)),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |
+            +- includes(return(operationSignature(55,getCustomerId)),dataSet(3,billingdata),tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),)
+            |  |
+            |  +- returnParameter(operationSignature(55,getCustomerId),return(operationSignature(55,getCustomerId)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(58,Energy Visualization),required(operationInterface(37,EnergyMeasurement))),operationSignature(55,getCustomerId),dataSet(3,billingdata),list(return),)
+            |
+            `- not mayknow(adversary(30,passer-by-adversary),dataSet(3,billingdata))
+               |
+               `- mayKnowData(adversary(30,passer-by-adversary),list(dataSet(4,public)))
+

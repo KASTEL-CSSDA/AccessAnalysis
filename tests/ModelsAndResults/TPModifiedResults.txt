@@ -1,0 +1,505 @@
+WORLD:
+adversary(69,Airline)
+|
++- attacker(adversary(69,Airline))
+|
+`- isInSecureWithRespectTo(adversary(69,Airline),)
+   |
+   +- observableServices(adversary(69,Airline),149,assemblyContext(161,Airline <Airline>),required(92),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer),location(38,Airline))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(69,Airline),location(38,Airline))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(69,Airline))
+   |  |  |
+   |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(69,Airline),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |
+   |  `- requiredInterfacesOn(resourceContainer(196,AirlineServer),92,assemblyContext(161,Airline <Airline>))
+   |     |
+   |     `- requires(basicComponent(75,Airline),92)
+   |
+   `- isInSecureWithRespectToService(adversary(69,Airline),149,tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(69,Airline),149,tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(69,Airline),149,tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+            |
+            +- includesCall(149,dataSet(9,UserDetails),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(92)),149,dataSet(9,UserDetails),list(65,call,return,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(69,Airline),dataSet(9,UserDetails))
+               |
+               `- mayKnowData(adversary(69,Airline),list(dataSet(4,CreditCardInformationDeclassified),dataSet(5,FlightOffer),dataSet(6,Selection),dataSet(3,TravelData),dataSet(8,Comissioning),dataSet(7,TechnicalSupportInformation)))
+
+adversary(69,Airline)
+|
++- attacker(adversary(69,Airline))
+|
+`- isInSecureWithRespectTo(adversary(69,Airline),)
+   |
+   +- accessibleParameters(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(64,value)),assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer),location(38,Airline))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(69,Airline),location(38,Airline))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(69,Airline))
+   |  |  |
+   |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(69,Airline),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(196,AirlineServer),operationInterface(80,Comission),assemblyContext(161,Airline <Airline>))
+   |  |  |
+   |  |  `- requires(basicComponent(75,Airline),operationInterface(80,Comission))
+   |  |
+   |  `- parametersOf(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+   |     |
+   |     `- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(64,value)),tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(64,value)),tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(64,value)),tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+            |
+            `- not includes(parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [sizeOf(return(_h574)),_h571,tuple(_h565,_h566),_h569]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [sizeOf(return(_h609)),_h606,tuple(_h600,_h601),_h604]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [return(_h644),_h641,tuple(_h635,_h636),_h639]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [return(_h677),_h674,tuple(_h668,_h669),_h672]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [parm(_h712,sizeOf(_h710)),_h707,tuple(_h701,_h702),_h705]
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               `- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+
+adversary(69,Airline)
+|
++- attacker(adversary(69,Airline))
+|
+`- isInSecureWithRespectTo(adversary(69,Airline),)
+   |
+   +- accessibleParameters(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(61,airline)),assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer),location(38,Airline))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(69,Airline),location(38,Airline))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(69,Airline))
+   |  |  |
+   |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(69,Airline),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(196,AirlineServer),operationInterface(80,Comission),assemblyContext(161,Airline <Airline>))
+   |  |  |
+   |  |  `- requires(basicComponent(75,Airline),operationInterface(80,Comission))
+   |  |
+   |  `- parametersOf(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+   |     |
+   |     `- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(61,airline)),tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(61,airline)),tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(69,Airline),parm(operationSignature(122,payCommission),parameter(61,airline)),tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+            |
+            `- not includes(parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),)
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [sizeOf(return(_h574)),_h571,tuple(_h565,_h566),_h569]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [sizeOf(return(_h609)),_h606,tuple(_h600,_h601),_h604]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [return(_h644),_h641,tuple(_h635,_h636),_h639]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [return(_h677),_h674,tuple(_h668,_h669),_h672]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),] = [parm(_h712,sizeOf(_h710)),_h707,tuple(_h701,_h702),_h705]
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               `- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+
+adversary(69,Airline)
+|
++- attacker(adversary(69,Airline))
+|
+`- isInSecureWithRespectTo(adversary(69,Airline),)
+   |
+   +- accessibleParameters(adversary(69,Airline),parm(149,sizeOf(65)),assemblyContext(161,Airline <Airline>),required(92),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer),location(38,Airline))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(69,Airline),location(38,Airline))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(69,Airline))
+   |  |  |
+   |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(69,Airline),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(196,AirlineServer),92,assemblyContext(161,Airline <Airline>))
+   |  |  |
+   |  |  `- requires(basicComponent(75,Airline),92)
+   |  |
+   |  `- parametersOf(149,parm(149,sizeOf(65)))
+   |     |
+   |     `- hasParameter(149,parm(149,sizeOf(65)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(69,Airline),parm(149,sizeOf(65)),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(69,Airline),parm(149,sizeOf(65)),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(69,Airline),parm(149,sizeOf(65)),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+            |
+            +- includes(parm(149,sizeOf(65)),dataSet(9,UserDetails),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+            |  |
+            |  +- hasParameter(149,parm(149,sizeOf(65)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(92)),149,dataSet(9,UserDetails),list(65,call,return,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(69,Airline),dataSet(9,UserDetails))
+               |
+               `- mayKnowData(adversary(69,Airline),list(dataSet(4,CreditCardInformationDeclassified),dataSet(5,FlightOffer),dataSet(6,Selection),dataSet(3,TravelData),dataSet(8,Comissioning),dataSet(7,TechnicalSupportInformation)))
+
+adversary(69,Airline)
+|
++- attacker(adversary(69,Airline))
+|
+`- isInSecureWithRespectTo(adversary(69,Airline),)
+   |
+   +- accessibleParameters(adversary(69,Airline),parm(149,65),assemblyContext(161,Airline <Airline>),required(92),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(69,Airline),resourceContainer(196,AirlineServer),location(38,Airline))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(69,Airline),location(38,Airline))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(69,Airline))
+   |  |  |
+   |  |  +- location(resourceContainer(196,AirlineServer),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(69,Airline),location(38,Airline),tamperProtection(44,AirlineLock))
+   |  |
+   |  +- requiredInterfacesOn(resourceContainer(196,AirlineServer),92,assemblyContext(161,Airline <Airline>))
+   |  |  |
+   |  |  `- requires(basicComponent(75,Airline),92)
+   |  |
+   |  `- parametersOf(149,parm(149,65))
+   |     |
+   |     `- hasParameter(149,parm(149,65))
+   |
+   `- isInSecureWithRespectToParameter(adversary(69,Airline),parm(149,65),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(69,Airline),parm(149,65),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(69,Airline),parm(149,65),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+            |
+            +- includes(parm(149,65),dataSet(9,UserDetails),tuple(assemblyContext(161,Airline <Airline>),required(92)),)
+            |  |
+            |  +- hasParameter(149,parm(149,65))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(161,Airline <Airline>),required(92)),149,dataSet(9,UserDetails),list(65,call,return,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(69,Airline),dataSet(9,UserDetails))
+               |
+               `- mayKnowData(adversary(69,Airline),list(dataSet(4,CreditCardInformationDeclassified),dataSet(5,FlightOffer),dataSet(6,Selection),dataSet(3,TravelData),dataSet(8,Comissioning),dataSet(7,TechnicalSupportInformation)))
+
+adversary(71,TravelAgency)
+|
++- attacker(adversary(71,TravelAgency))
+|
+`- isInSecureWithRespectTo(adversary(71,TravelAgency),)
+   |
+   +- accessibleParameters(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(64,value)),assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(71,TravelAgency),resourceContainer(195,AgencyServer))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(71,TravelAgency),resourceContainer(195,AgencyServer),location(37,TravelAgency))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(195,AgencyServer),location(37,TravelAgency),tamperProtection(45,TravelAgencyLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(71,TravelAgency),location(37,TravelAgency))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(71,TravelAgency))
+   |  |  |
+   |  |  +- location(resourceContainer(195,AgencyServer),location(37,TravelAgency),tamperProtection(45,TravelAgencyLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(71,TravelAgency),location(37,TravelAgency),tamperProtection(45,TravelAgencyLock))
+   |  |
+   |  +- providedInterfacesOn(resourceContainer(195,AgencyServer),operationInterface(80,Comission),assemblyContext(159,TravelAgency <TravelAgency>))
+   |  |  |
+   |  |  `- provides(basicComponent(74,TravelAgency),operationInterface(80,Comission))
+   |  |
+   |  `- parametersOf(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+   |     |
+   |     `- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(64,value)),tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(64,value)),tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(64,value)),tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+            |
+            `- not includes(parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [sizeOf(return(_h574)),_h571,tuple(_h565,_h566),_h569]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [sizeOf(return(_h609)),_h606,tuple(_h600,_h601),_h604]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [return(_h644),_h641,tuple(_h635,_h636),_h639]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [return(_h677),_h674,tuple(_h668,_h669),_h672]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(64,value)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [parm(_h712,sizeOf(_h710)),_h707,tuple(_h701,_h702),_h705]
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(64,value)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               `- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+
+adversary(71,TravelAgency)
+|
++- attacker(adversary(71,TravelAgency))
+|
+`- isInSecureWithRespectTo(adversary(71,TravelAgency),)
+   |
+   +- accessibleParameters(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(61,airline)),assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission)),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(71,TravelAgency),resourceContainer(195,AgencyServer))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(71,TravelAgency),resourceContainer(195,AgencyServer),location(37,TravelAgency))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(195,AgencyServer),location(37,TravelAgency),tamperProtection(45,TravelAgencyLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(71,TravelAgency),location(37,TravelAgency))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(71,TravelAgency))
+   |  |  |
+   |  |  +- location(resourceContainer(195,AgencyServer),location(37,TravelAgency),tamperProtection(45,TravelAgencyLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(71,TravelAgency),location(37,TravelAgency),tamperProtection(45,TravelAgencyLock))
+   |  |
+   |  +- providedInterfacesOn(resourceContainer(195,AgencyServer),operationInterface(80,Comission),assemblyContext(159,TravelAgency <TravelAgency>))
+   |  |  |
+   |  |  `- provides(basicComponent(74,TravelAgency),operationInterface(80,Comission))
+   |  |
+   |  `- parametersOf(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+   |     |
+   |     `- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(61,airline)),tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(61,airline)),tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(71,TravelAgency),parm(operationSignature(122,payCommission),parameter(61,airline)),tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+            |
+            `- not includes(parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),)
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [sizeOf(return(_h574)),_h571,tuple(_h565,_h566),_h569]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [sizeOf(return(_h609)),_h606,tuple(_h600,_h601),_h604]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [return(_h644),_h641,tuple(_h635,_h636),_h639]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [return(_h677),_h674,tuple(_h668,_h669),_h672]
+               |
+               +- not [parm(operationSignature(122,payCommission),parameter(61,airline)),_h584,tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),] = [parm(_h712,sizeOf(_h710)),_h707,tuple(_h701,_h702),_h705]
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+               |
+               +- hasParameter(operationSignature(122,payCommission),parm(operationSignature(122,payCommission),parameter(61,airline)))
+               |
+               +- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call),)
+               |
+               `- lookupDataSetParameterNames(tuple(assemblyContext(159,TravelAgency <TravelAgency>),provided(operationInterface(80,Comission))),operationSignature(122,payCommission),dataSet(3,TravelData),list(call,return,sizeOf(*)),)
+
+adversary(72,AirlineTechnicalService)
+|
++- attacker(adversary(72,AirlineTechnicalService))
+|
+`- isInSecureWithRespectTo(adversary(72,AirlineTechnicalService),)
+   |
+   +- observableServices(adversary(72,AirlineTechnicalService),149,assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(72,AirlineTechnicalService),resourceContainer(198,SupportCenter))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(72,AirlineTechnicalService),resourceContainer(198,SupportCenter),location(43,SupportCenter))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(198,SupportCenter),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(72,AirlineTechnicalService),location(43,SupportCenter))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(72,AirlineTechnicalService))
+   |  |  |
+   |  |  +- location(resourceContainer(198,SupportCenter),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(72,AirlineTechnicalService),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |
+   |  `- providedInterfacesOn(resourceContainer(198,SupportCenter),92,assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>))
+   |     |
+   |     `- provides(basicComponent(79,AirlineLogger),92)
+   |
+   `- isInSecureWithRespectToService(adversary(72,AirlineTechnicalService),149,tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+      |
+      `- serviceForbiddenToBeObservedBy(adversary(72,AirlineTechnicalService),149,tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+         |
+         `- not serviceAllowedToBeObservedBy(adversary(72,AirlineTechnicalService),149,tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+            |
+            +- includesCall(149,dataSet(9,UserDetails),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),149,dataSet(9,UserDetails),list(65,call,return,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(72,AirlineTechnicalService),dataSet(9,UserDetails))
+               |
+               `- mayKnowData(adversary(72,AirlineTechnicalService),list(dataSet(7,TechnicalSupportInformation)))
+
+adversary(72,AirlineTechnicalService)
+|
++- attacker(adversary(72,AirlineTechnicalService))
+|
+`- isInSecureWithRespectTo(adversary(72,AirlineTechnicalService),)
+   |
+   +- accessibleParameters(adversary(72,AirlineTechnicalService),parm(149,sizeOf(65)),assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(72,AirlineTechnicalService),resourceContainer(198,SupportCenter))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(72,AirlineTechnicalService),resourceContainer(198,SupportCenter),location(43,SupportCenter))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(198,SupportCenter),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(72,AirlineTechnicalService),location(43,SupportCenter))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(72,AirlineTechnicalService))
+   |  |  |
+   |  |  +- location(resourceContainer(198,SupportCenter),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(72,AirlineTechnicalService),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |
+   |  +- providedInterfacesOn(resourceContainer(198,SupportCenter),92,assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>))
+   |  |  |
+   |  |  `- provides(basicComponent(79,AirlineLogger),92)
+   |  |
+   |  `- parametersOf(149,parm(149,sizeOf(65)))
+   |     |
+   |     `- hasParameter(149,parm(149,sizeOf(65)))
+   |
+   `- isInSecureWithRespectToParameter(adversary(72,AirlineTechnicalService),parm(149,sizeOf(65)),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(72,AirlineTechnicalService),parm(149,sizeOf(65)),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(72,AirlineTechnicalService),parm(149,sizeOf(65)),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+            |
+            +- includes(parm(149,sizeOf(65)),dataSet(9,UserDetails),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+            |  |
+            |  +- hasParameter(149,parm(149,sizeOf(65)))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),149,dataSet(9,UserDetails),list(65,call,return,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(72,AirlineTechnicalService),dataSet(9,UserDetails))
+               |
+               `- mayKnowData(adversary(72,AirlineTechnicalService),list(dataSet(7,TechnicalSupportInformation)))
+
+adversary(72,AirlineTechnicalService)
+|
++- attacker(adversary(72,AirlineTechnicalService))
+|
+`- isInSecureWithRespectTo(adversary(72,AirlineTechnicalService),)
+   |
+   +- accessibleParameters(adversary(72,AirlineTechnicalService),parm(149,65),assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92),)
+   |  |
+   |  +- containersFullyAccessibleBy(adversary(72,AirlineTechnicalService),resourceContainer(198,SupportCenter))
+   |  |  |
+   |  |  +- containersPhysicalAccessibleBy(adversary(72,AirlineTechnicalService),resourceContainer(198,SupportCenter),location(43,SupportCenter))
+   |  |  |  |
+   |  |  |  +- location(resourceContainer(198,SupportCenter),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |  |  |
+   |  |  |  `- locationsAccessibleBy(adversary(72,AirlineTechnicalService),location(43,SupportCenter))
+   |  |  |     |
+   |  |  |     `- attacker(adversary(72,AirlineTechnicalService))
+   |  |  |
+   |  |  +- location(resourceContainer(198,SupportCenter),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |  |
+   |  |  `- tamperingAbilities(adversary(72,AirlineTechnicalService),location(43,SupportCenter),tamperProtection(48,SupportCenterLock))
+   |  |
+   |  +- providedInterfacesOn(resourceContainer(198,SupportCenter),92,assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>))
+   |  |  |
+   |  |  `- provides(basicComponent(79,AirlineLogger),92)
+   |  |
+   |  `- parametersOf(149,parm(149,65))
+   |     |
+   |     `- hasParameter(149,parm(149,65))
+   |
+   `- isInSecureWithRespectToParameter(adversary(72,AirlineTechnicalService),parm(149,65),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+      |
+      `- parameterForbiddenToBeAccessedBy(adversary(72,AirlineTechnicalService),parm(149,65),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+         |
+         `- not parameterAllowedToBeAccessedBy(adversary(72,AirlineTechnicalService),parm(149,65),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+            |
+            +- includes(parm(149,65),dataSet(9,UserDetails),tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),)
+            |  |
+            |  +- hasParameter(149,parm(149,65))
+            |  |
+            |  `- lookupDataSetParameterNames(tuple(assemblyContext(163,Assembly_AirlineLogger <AirlineLogger>),provided(92)),149,dataSet(9,UserDetails),list(65,call,return,sizeOf(*)),)
+            |
+            `- not mayknow(adversary(72,AirlineTechnicalService),dataSet(9,UserDetails))
+               |
+               `- mayKnowData(adversary(72,AirlineTechnicalService),list(dataSet(7,TechnicalSupportInformation)))
+
